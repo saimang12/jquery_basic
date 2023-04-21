@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slickslide 07 - 역방향</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick07.css">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <section class="rtl">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laboriosam?</p>
+        <div class="inner">
+            <div class="rtl_slide" dir="rtl">
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="../img/main_con01.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+
+        $(function () {
+            $('.rtl_slide').slick({
+                autoplay: true,
+                slidesToShow: 5,
+                rtl: true,
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

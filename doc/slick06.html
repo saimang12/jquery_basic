@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slickslide 06 - 흘러가는 글자</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick06.css">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <section class="linear">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laboriosam?</p>
+        <div class="linear_slide">
+            <span>Lorem, ipsum dolor.</span><strong>Lorem ipsum dolor sit amet.</strong>
+            <span>Lorem, ipsum dolor.</span><strong>Lorem ipsum dolor sit amet.</strong>
+        </div>
+    </section>
+
+
+
+    <script>
+
+
+        $(function () {
+            $('.linear_slide').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                variableWidth: true,
+                cssEase: 'linear',
+                speed: 3000,
+                centerMode: true,
+
+
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rightBanner 02</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            height: 100vh;
+            background: #333;
+        }
+
+        .right_banner {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translate(100%, 0);
+            transition: 0.5s;
+        }
+
+        .right_banner ul {
+            padding: 20px;
+            background: #fff;
+            line-height: 40px;
+        }
+
+        .right_banner.on {
+            transform: translate(0, 0);
+            transition: 0.5s;
+        }
+
+        .right_banner.on i {
+            transform: rotate(180deg);
+        }
+
+        .right_banner button {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transform: translate(-100%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section class="main">
+        <ul>
+            <li><button><i class="xi-home"></i></button><a href="">menu01</a></li>
+            <li><button><i class="xi-cart-o"></i></button><a href="">menu02</a></li>
+            <li><button><i class="xi-heart-o"></i></button><a href="">menu03</a></li>
+            <li><button><i class="xi-angle-up"></i></button><a href="">menu04</a></li>
+        </ul>
+    </section>
+    <div class="right_banner">
+        <ul>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu02</a></li>
+            <li><a href="">menu03</a></li>
+            <li><a href="">menu04</a></li>
+        </ul>
+        <button><i class="xi-arrow-right"></i></button>
+    </div>
+    <script>
+        $(function () {
+            $('.right_banner button').on('click', function () {
+                $('.right_banner').toggleClass('on')
+            })
+        })
+    </script>
+</body>
+
+</html>

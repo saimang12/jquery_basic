@@ -1,0 +1,42 @@
+.sync {
+    padding: 100px 0;
+}
+
+.sync .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.sync h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.sync p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sync .inner>* {
+    flex: 1;
+    overflow: hidden;
+}
+
+.sync .arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.sync .dots {
+    display: flex;
+    gap: 10px;
+
+}

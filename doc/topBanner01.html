@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topBanner 01</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            height: 100vh;
+            background: #333;
+        }
+
+        .top_banner {
+            position: relative;
+            background: tomato;
+            line-height: 100px;
+            columns: #fff;
+        }
+
+        .top_banner .inner {
+            width: 1200px;
+            margin: 0 auto;
+            height: 0;
+            overflow: hidden;
+
+            transition: 0.5s;
+        }
+
+        .top_banner.on .inner {
+            height: 100px;
+            transition: 0.5s;
+
+        }
+
+        .top_banner button {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(0, 100%);
+            margin: 0 0 0 600px;
+            border: none;
+            background: tomato;
+            padding: 0 15px 3px 15px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .top_banner.on {
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top_banner">
+            <div class="inner">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quidem.
+            </div>
+            <button>
+                <i class="xi-angle-down"></i>DUNKIN HOLIDAY
+            </button>
+        </div>
+        <h1>
+            <a href="">
+                <img src="../img/logo_w.png" alt="">
+            </a>
+        </h1>
+    </header>
+    <section class="main">
+
+    </section>
+    <script>
+        $(function () {
+            $('.top_banner button').on('click', function () {
+                $('.top_banner').toggleClass('on')
+            })
+        })
+    </script>
+</body>
+
+</html>

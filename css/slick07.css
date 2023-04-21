@@ -1,0 +1,31 @@
+.rtl {
+    padding: 100px 0;
+}
+
+.rtl h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.rtl p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.rtl .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.rtl .rtl_slide figure {
+    margin: 0 15px;
+}
+
+.rtl .rtl_slide {
+    margin: 0 -15px;
+}

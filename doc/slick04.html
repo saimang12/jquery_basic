@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick 04 - 화살표 도트 만들어 쓰기</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick04.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section class="product">
+        <div class="tit">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, impedit.</p>
+            <div class="btn">
+                <button class="play">play</button>
+                <button class="pause">pause</button>
+            </div>
+            <div class="toggle">
+                <span></span>
+            </div>
+
+        </div>
+        <div class="inner">
+            <div class="product_slide">
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con01.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con02.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con03.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con04.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con05.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con06.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+            </div>
+            <div class="arrows">
+                <i class="xi-arrow-left"></i>
+                <i class="xi-arrow-right"></i>
+            </div>
+            <ul class="dots">
+                <li class="on"><button>01</button></li>
+                <li><button>02</button></li>
+                <li><button>03</button></li>
+                <li><button>04</button></li>
+                <li><button>05</button></li>
+                <li><button>06</button></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+        $(function () {
+
+            $('.product_slide').slick({
+                slidesToShow: 5,
+                arrows: false,
+
+            });
+
+            $('.product .arrows i:nth-child(1)').on('click', function () {
+                $('.product_slide').slick('slickPrev')
+            });
+
+            $('.product .arrows i:nth-child(2)').on('click', function () {
+                $('.product_slide').slick('slickNext')
+            });
+
+            $('.product .btn .play').on('click', function () {
+                $('.product_slide').slick('slickPlay')
+            });
+
+            $('.product .btn .pause').on('click', function () {
+                $('.product_slide').slick('slickPause')
+            });
+
+            var sw = true;
+            $('.product .toggle').on('click', function () {
+                if (sw) {
+                    $('.product_slide').slick('slickPlay')
+                } else {
+                    $('.product_slide').slick('slickPause')
+                }
+
+                $('.product .toggle').toggleClass('on')
+            })
+
+            sw = !sw;
+
+            $('.product_slide').on('afterChange', function (e, s, c) {
+                $('.product .dots li').eq(c).addClass('on').siblings().removeClass('on')
+            });
+
+            $('.product .dots button').on('click', function () {
+                var num = $(this).parent().index()//num = this의 부모의 번호
+                $('.product_slide').slick('slickGoTo', num)
+                // $('.product .dots li').eq(num).addClass('on').siblings().removeClass('on')
+            });
+
+
+
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

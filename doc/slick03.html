@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick 03 - 슬라이드 여러개 만들기 </title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick03.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section class="product">
+        <div class="tit">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, impedit.</p>
+        </div>
+        <div class="inner">
+            <div class="product_slide">
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con01.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con02.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con03.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con04.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con05.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+                <figure>
+                    <div class="box">
+                        <img src="../img/main_con06.jpg" alt="">
+                    </div>
+                    <div class="des">제품설명</div>
+                    <a href="">구매하기</a>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+        $(function () {
+
+            $('.product_slide').slick({
+                slidesToShow: 5,
+            });
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

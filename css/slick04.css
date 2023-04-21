@@ -1,0 +1,131 @@
+.product {
+    position: relative;
+    padding: 100px 0;
+}
+
+.product .tit {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto 30px auto;
+}
+
+.product h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.product p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.product .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product .toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: tomato;
+    color: #fff;
+}
+
+.product .toggle::before {
+    content: "\ea3e";
+    font-family: xeicon;
+}
+
+.product .toggle.on::before {
+    content: "\ea3b";
+    font-family: xeicon;
+}
+
+.product .toggle span {
+    font-size: 0;
+}
+
+
+.product_slide figure {
+    padding: 0 15px;
+    margin: 0 3px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px 5px 20px 5px;
+}
+
+.product_slide figure img {
+    transition: 0.5s;
+}
+
+.product_slide figure:hover img {
+    transform: scale(1.2);
+}
+
+.product_slide .box {
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.product_slide .des {
+    margin: 0 0 10px 0;
+}
+
+.product_slide a {
+    display: inline-block;
+    padding: 7px 15px 5px 15px;
+    background: #333;
+    color: #fff;
+
+}
+
+.product_slide {
+    margin: 0 -3px 20px -3px;
+}
+
+.product .arrows i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    padding: 15px;
+    background: tomato;
+    color: #fff;
+
+    border-radius: 50%;
+}
+
+.product .arrows i:first-child {
+    margin: 0 0 0 -700px;
+}
+
+.product .arrows i:last-child {
+    margin: 0 0 0 700px;
+}
+
+.product .dots {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.product .dots button {
+    background: tomato;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    padding: 3px;
+    font-size: 10px;
+}
+
+.product .dots li.on button {
+    background: #333;
+}

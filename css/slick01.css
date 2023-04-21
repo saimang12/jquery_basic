@@ -1,0 +1,53 @@
+.big-shadow {
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000;
+
+}
+
+.slick01 {
+    position: relative;
+}
+
+/* 슬라이드 깜박임 없애기 */
+.slick-list,
+.slick-track {
+    transition-delay: 0.025s;
+}
+
+.itm {
+    height: 100vh;
+}
+
+.itm01 {
+    background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.itm02 {
+    background: url(../img/main_visual02.jpg) no-repeat center center/cover;
+}
+
+.itm03 {
+    background: url(../img/main_visual03.jpg) no-repeat center center/cover;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    z-index: 999;
+}
+
+.slogan h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+.slogan p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}

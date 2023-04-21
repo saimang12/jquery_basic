@@ -1,0 +1,33 @@
+.product {
+    padding: 100px 0;
+}
+
+.product .tit {
+    width: 1200px;
+    margin: 0 auto 30px auto;
+}
+
+.product h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.product p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.product .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product_slide figure {
+    padding: 0 15px;
+}
+
+.product_slide {
+    margin: 0 -15px;
+}
